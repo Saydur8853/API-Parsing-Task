@@ -32,8 +32,8 @@ class ViewController: UIViewController {
                 if let currentWeatherDictionary = jsonDictionary["currently"] as? [String : Any]{
                     let summary = currentWeatherDictionary["summary"] as? String
                     temp = currentWeatherDictionary["temperature"] as? Double ?? 0.0
-                   
-                    //Below code for converting double type too string 
+                    
+                    //Below code for converting double type too string
                     // self.text_view.text = String(temp)
                     self.text_view.text = summary
                     
